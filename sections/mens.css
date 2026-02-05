@@ -32,7 +32,7 @@
     margin-bottom: 60px;
     overflow: auto;
     width: 100%;
-    gap: 10px;
+    gap: 30px;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -43,43 +43,53 @@
 }
 
 .category{
-    background-color: #D3D3D3;
-    display: flex;
+    padding: 10px 5px;
+    background-color: #d5d5d5;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-width:200px;
-    height: 200px;
+    min-width:160px;
+    height: 180px;
     position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    cursor: pointer;    
+    border-radius: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+    overflow: hidden;  
 }
 .category img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    
 }
+
+.image_div{
+    height: 150px;
+    width: 160px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+
 .category_name{
+    /* margin-top: 0px; */
     position:absolute;
-    bottom: 0;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     text-align: center;
-    font-weight: 600px;
+    font-weight: 700;
     font-size: 16px;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
+    color: black;
+    /* background-color: rgba(0,0,0,0.7); */
 }
 
 .categories_section{
-    overflow: auto;
-    width: 100%;
-    gap: 10px;
+    overflow: hidden;
+    /* width: 100%; */
+    padding: 40px 20px;
     display: flex;
-    align-items: center;
-    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 30px;
 }
 
 .categories_section::-webkit-scrollbar{
@@ -88,6 +98,160 @@
 
 h3{
     font: bold;
-    font-size: 60px;
+    font-size: 45px;
     margin-bottom: 25px;
+}
+
+.footwear{
+    padding: 10px 5px;
+    height: 160px;
+    width: 180px;
+    cursor: pointer;
+    background-color: #F8F8FF;
+    border-radius: 5px;
+}
+
+.footwear img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    /* object-fit: cover; */
+    /* object-fit: fill; */
+    object-fit: contain;
+}
+
+.footwear_image{
+    height: 130px;
+    width: 180px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.footwear_name{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footwear_section{
+    padding: 5px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-bottom: 50px;
+}
+
+.footwear_section::-webkit-scrollbar{
+    height: 0.5px;
+}
+
+.accessories{
+    height: 180px;
+    width: 180px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #F7E7CE;
+}
+
+.accessories_image{
+    height: 140px;
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.accessories img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.accessories_name{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessories_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 15px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;   
+}
+
+.accessories_section::-webkit-scrollbar{
+    width: 0.1px;
+}
+
+.highlight{
+    min-width: 100%;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.highlight_image{
+    flex: 0 0 80%;
+    height: 100%;
+    /* width: 50%; */
+}
+
+.highlight_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    object-fit:cover;
+}
+
+.highlight_name{
+    flex: 0 0 20%;
+    /* margin-right: 90px; */
+    font-size: 25px;
+    font-weight: 100;
+    /* color: #333; */
+    opacity: 0.6;
+}
+
+hr{
+    margin-top: 40px;
+}
+
+h5{
+    font-weight: 100;
+    font-size:medium;
+}
+
+.highlight_section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.highlight_section > .highlight {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.highlight_section::-webkit-scrollbar{
+    width: 0.5px;
 }

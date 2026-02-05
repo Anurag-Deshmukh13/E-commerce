@@ -27,8 +27,8 @@ a{
 }
 
 img{
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
 }
 
@@ -69,6 +69,6 @@ footer{
 
 main{
     padding: 10px;
-    height: 200vh;
+    height: 300vh;
     background-color: #FAF3E1;
 }
